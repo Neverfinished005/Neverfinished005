@@ -35,29 +35,29 @@ def frame(W, H, m=20):
 BAT = f'<path d="M0,0 C-6,-11 -19,-13 -29,-4 C-22,-6 -15,-3 -11,3 C-7,-1 -3,1 0,5 C3,1 7,-1 11,3 C15,-3 22,-6 29,-4 C19,-13 6,-11 0,0Z" fill="#000" stroke="{BONE}" stroke-opacity=".5" stroke-width=".8"/>'
 
 # ================================================================ BANNER
-W, H = 1200, 600
+W, H = 1200, 900
 im = Image.open(os.path.join(T, 'src-hero.jpg')).convert('L').rotate(90, expand=True)
 im.thumbnail((1300, 1300))
 buf = io.BytesIO(); im.save(buf, 'JPEG', quality=74, optimize=True)
 IMG = base64.b64encode(buf.getvalue()).decode()
-MOON = (427, 203)   # crescent position inside the 1200x600 cover crop
+MOON = (369, 320)   # crescent position inside the 1200x900 cover crop
 
 dust = ''.join(f'<circle cx="{random.randint(30,W-30)}" cy="{random.randint(80,H-40)}" r="{random.choice([.8,1.1,1.6])}" fill="{BONE}" class="du" style="animation-delay:{random.random()*10:.1f}s;animation-duration:{8+random.random()*8:.1f}s;--dx:{random.randint(-40,40)}px"/>' for _ in range(40))
-stars = ''.join(f'<circle cx="{random.randint(120,640)}" cy="{random.randint(60,330)}" r="{random.choice([.9,1.3,1.8])}" fill="#fff" class="tw" style="animation-delay:{random.random()*5:.1f}s;animation-duration:{1.8+random.random()*3:.1f}s"/>' for _ in range(36))
+stars = ''.join(f'<circle cx="{random.randint(70,560)}" cy="{random.randint(70,470)}" r="{random.choice([.9,1.3,1.8])}" fill="#fff" class="tw" style="animation-delay:{random.random()*5:.1f}s;animation-duration:{1.8+random.random()*3:.1f}s"/>' for _ in range(36))
 shoot = ''.join(f'<g class="sh" style="animation-delay:{d}s"><line x1="0" y1="0" x2="-110" y2="-44" stroke="url(#sg)" stroke-width="2.2" stroke-linecap="round"/></g>' for d in (3, 11, 19))
 bats = ''.join(f'<g class="bat" style="animation-delay:{i*3.1:.1f}s;animation-duration:{14+i*2:.1f}s;--y:{random.randint(-30,50)}px;--s:{.5+random.random()*.55:.2f}"><g class="wg" style="animation-delay:{i*.1:.2f}s">{BAT}</g></g>' for i in range(5))
 hatch = ''.join(f'<line x1="{x}" y1="0" x2="{x-120}" y2="{H}" stroke="#000" stroke-width="1.2" stroke-opacity=".5"/>' for x in range(0, W + 120, 11))
 
-banner = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {W} {H}" width="100%" role="img" aria-label="Rudra Vable, Neverfinished005">
+banner = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {W} {H}" width="100%" role="img" aria-label="Rudi">
 <defs><style>{FONTS}
-.kb{{animation:kb 30s ease-in-out infinite alternate;transform-origin:62% 52%}}@keyframes kb{{from{{transform:scale(1)}}to{{transform:scale(1.12) translate(-18px,-4px)}}}}
+.kb{{animation:kb 30s ease-in-out infinite alternate;transform-origin:62% 55%}}@keyframes kb{{from{{transform:scale(1)}}to{{transform:scale(1.12) translate(-18px,-4px)}}}}
 .mg{{animation:mg 6s ease-in-out infinite;transform-origin:{MOON[0]}px {MOON[1]}px}}@keyframes mg{{0%,100%{{opacity:.25;transform:scale(1)}}50%{{opacity:.8;transform:scale(1.18)}}}}
 .tw{{animation:tw 3s ease-in-out infinite}}@keyframes tw{{0%,100%{{opacity:.1}}50%{{opacity:1}}}}
 .sh{{opacity:0;animation:ss 22s linear infinite;transform:translate(560px,40px)}}@keyframes ss{{0%{{opacity:0;transform:translate(640px,30px)}}1%{{opacity:1}}5%{{opacity:0;transform:translate(300px,170px)}}100%{{opacity:0;transform:translate(300px,170px)}}}}
 .fog1{{animation:f1 44s linear infinite alternate}}.fog2{{animation:f2 60s linear infinite alternate}}
 @keyframes f1{{from{{transform:translateX(-220px)}}to{{transform:translateX(220px)}}}}@keyframes f2{{from{{transform:translateX(200px)}}to{{transform:translateX(-240px)}}}}
 .bat{{opacity:0;animation:fly 16s linear infinite}}
-@keyframes fly{{0%{{opacity:0;transform:translate(1260px,calc(110px + var(--y))) scale(var(--s))}}6%{{opacity:1}}50%{{transform:translate(640px,calc(60px + var(--y))) scale(var(--s))}}94%{{opacity:1}}100%{{opacity:0;transform:translate(-60px,calc(150px + var(--y))) scale(var(--s))}}}}
+@keyframes fly{{0%{{opacity:0;transform:translate(1260px,calc(150px + var(--y))) scale(var(--s))}}6%{{opacity:1}}50%{{transform:translate(640px,calc(90px + var(--y))) scale(var(--s))}}94%{{opacity:1}}100%{{opacity:0;transform:translate(-60px,calc(150px + var(--y))) scale(var(--s))}}}}
 .wg{{animation:fl .3s ease-in-out infinite alternate}}@keyframes fl{{from{{transform:scaleY(1)}}to{{transform:scaleY(.35)}}}}
 .du{{opacity:0;animation:du 12s linear infinite}}@keyframes du{{0%{{opacity:0;transform:translate(0,0)}}20%{{opacity:.8}}100%{{opacity:0;transform:translate(var(--dx),-170px)}}}}
 .flash{{opacity:0;animation:fx 17s linear infinite}}@keyframes fx{{0%,92%,100%{{opacity:0}}93%{{opacity:.5}}94%{{opacity:.05}}95%{{opacity:.34}}98%{{opacity:0}}}}
@@ -85,20 +85,20 @@ banner = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 <g clip-path="url(#card)">
 <rect width="{W}" height="{H}" fill="#000"/>
 <g class="kb"><image x="0" y="0" width="{W}" height="{H}" preserveAspectRatio="xMidYMid slice" filter="url(#hc)" href="data:image/jpeg;base64,{IMG}" xlink:href="data:image/jpeg;base64,{IMG}"/></g>
-<circle class="mg" cx="{MOON[0]}" cy="{MOON[1]}" r="150" fill="url(#mgl)"/>
+<circle class="mg" cx="{MOON[0]}" cy="{MOON[1]}" r="190" fill="url(#mgl)"/>
 <g>{stars}</g><g>{shoot}</g>
-<g class="fog1"><ellipse cx="640" cy="540" rx="560" ry="46" fill="url(#fogg)" filter="url(#blur)"/></g>
-<g class="fog2"><ellipse cx="480" cy="470" rx="560" ry="36" fill="url(#fogg)" filter="url(#blur)"/></g>
+<g class="fog1"><ellipse cx="640" cy="820" rx="600" ry="60" fill="url(#fogg)" filter="url(#blur)"/></g>
+<g class="fog2"><ellipse cx="480" cy="700" rx="600" ry="46" fill="url(#fogg)" filter="url(#blur)"/></g>
 <g>{bats}</g>
 <rect width="{W}" height="{H}" fill="url(#lft)"/><rect width="{W}" height="{H}" fill="url(#bot)"/><rect width="{W}" height="{H}" fill="url(#vig)"/>
 <rect width="{W}" height="{H}" fill="url(#ht)" opacity=".55"/>
 <g>{dust}</g>
 <rect class="flash" width="{W}" height="{H}" fill="#fff"/>
 {frame(W, H)}
-<g class="rise"><text x="66" y="506" font-family="GG,'Times New Roman',serif" font-weight="700" font-size="116" fill="url(#txt)">Rudra Vable</text>
-<g transform="skewX(-16)"><rect class="glint" x="20" y="416" width="70" height="120" fill="url(#streak)" opacity="0"/></g></g>
+<g class="rise"><text x="64" y="812" font-family="UC,'Times New Roman',serif" font-size="230" fill="url(#txt)">Rudi</text>
+<g transform="skewX(-16)"><rect class="glint" x="20" y="640" width="90" height="190" fill="url(#streak)" opacity="0"/></g></g>
 </g></svg>'''
-open(os.path.join(A, 'g-banner-v2.svg'), 'w', encoding='utf-8').write(banner)
+open(os.path.join(A, 'g-banner-v3.svg'), 'w', encoding='utf-8').write(banner)
 
 # ================================================================ SECTION HEADERS (ink band with moving hatch)
 def header(slug, label, sub):
