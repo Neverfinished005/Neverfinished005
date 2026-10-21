@@ -1,65 +1,54 @@
 <div align="center">
 
-<img src="./assets/hero-image.svg" alt="Rudra Vable, builder at Alpha.Kore" width="100%">
+<img src="./assets/g-banner.svg" alt="Rudra Vable, Neverfinished005" width="100%">
 
-<p>
-  <a href="https://www.alphakore.org/"><img height="28" src="https://img.shields.io/badge/ALPHA.KORE-0d0814?style=for-the-badge&labelColor=0d0814&color=0d0814&logoColor=e3b04b&label=%E2%9C%A6&labelColor=c08f14" alt="Alpha.Kore"></a>&nbsp;
-  <a href="mailto:alpha.kore25@gmail.com"><img height="28" src="https://img.shields.io/badge/EMAIL-0d0814?style=for-the-badge&logo=gmail&logoColor=e9739f&labelColor=0d0814&color=3b1a35" alt="Email"></a>
-</p>
+<br>
 
-<p>
-  <a href="https://www.linkedin.com/in/alpha-kore-7586ba39a/" target="_blank" rel="noopener noreferrer"><img height="26" src="https://raw.githubusercontent.com/CLorant/readme-social-icons/refs/heads/main/large/colored/linkedin.svg" alt="LinkedIn"></a>&nbsp;&nbsp;
-  <a href="https://discord.gg/tGRYVZ2pk" target="_blank" rel="noopener noreferrer"><img height="26" src="https://raw.githubusercontent.com/CLorant/readme-social-icons/refs/heads/main/large/colored/discord.svg" alt="Discord"></a>&nbsp;&nbsp;
-  <a href="https://www.instagram.com/alpha.kore5" target="_blank" rel="noopener noreferrer"><img height="26" src="https://raw.githubusercontent.com/CLorant/readme-social-icons/refs/heads/main/large/colored/instagram.svg" alt="Instagram"></a>&nbsp;&nbsp;
-  <a href="https://x.com/alphakore10" target="_blank" rel="noopener noreferrer"><img height="26" src="https://raw.githubusercontent.com/CLorant/readme-social-icons/refs/heads/main/large/colored/twitter-x.svg" alt="X"></a>&nbsp;&nbsp;
-</p>
+<sub><code>i spawn at night &middot; code &middot; explore &middot; watch stars &middot; admire nature</code></sub>
 
 </div>
 
-<img src="./assets/divider-dark.svg" alt="" width="100%">
+<img src="./assets/g-about.svg" alt="The Dossier" width="100%">
+
+```yaml
+codename:    Neverfinished005
+real_name:   Rudra Vable
+domain:      Vadodara, Gujarat, India
+class:       Aspiring Software Developer
+spells:      Python / Machine Learning / SQL / DSA / Mobile Apps
+active_hours: after dark
+status:      open to SDE and ML / AI roles
+```
+
+I'm building a solid foundation in **Python, machine learning, SQL, data structures and algorithms, and mobile apps**. Most of what I know comes from academic and personal projects: ML models, databases and apps. I like practical things that work, and I'm always learning the next one.
+
+<img src="./assets/g-arsenal.svg" alt="The Arsenal" width="100%">
 
 <p align="center">
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=Neverfinished005&show_icons=true&hide_border=false&count_private=true&bg_color=0d0814&title_color=e9739f&text_color=f4eee6&icon_color=e3b04b&border_color=3b2a4a" alt="GitHub stats">
-  <img height="175" src="https://streak-stats.demolab.com?user=Neverfinished005&count_private=true&background=0d0814&ring=e9739f&fire=e3b04b&currStreakLabel=e3b04b&sideLabels=f4eee6&currStreakNum=f4eee6&sideNums=f4eee6&dates=9d93ad&border=3b2a4a" alt="Streak">
+<img src="https://img.shields.io/badge/Python-0b0b0d?style=for-the-badge&logo=python&logoColor=e9e3d1&labelColor=0b0b0d" alt="Python"> <img src="https://img.shields.io/badge/Java-0b0b0d?style=for-the-badge&logo=openjdk&logoColor=e9e3d1&labelColor=0b0b0d" alt="Java"> <img src="https://img.shields.io/badge/C++-0b0b0d?style=for-the-badge&logo=cplusplus&logoColor=e9e3d1&labelColor=0b0b0d" alt="C++"> <img src="https://img.shields.io/badge/JavaScript-0b0b0d?style=for-the-badge&logo=javascript&logoColor=e9e3d1&labelColor=0b0b0d" alt="JavaScript"> <img src="https://img.shields.io/badge/TypeScript-0b0b0d?style=for-the-badge&logo=typescript&logoColor=e9e3d1&labelColor=0b0b0d" alt="TypeScript"> <img src="https://img.shields.io/badge/HTML5-0b0b0d?style=for-the-badge&logo=html5&logoColor=e9e3d1&labelColor=0b0b0d" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-0b0b0d?style=for-the-badge&logo=css3&logoColor=e9e3d1&labelColor=0b0b0d" alt="CSS3"> <img src="https://img.shields.io/badge/React-0b0b0d?style=for-the-badge&logo=react&logoColor=e9e3d1&labelColor=0b0b0d" alt="React"> <img src="https://img.shields.io/badge/Flutter-0b0b0d?style=for-the-badge&logo=flutter&logoColor=e9e3d1&labelColor=0b0b0d" alt="Flutter"> <img src="https://img.shields.io/badge/PostgreSQL-0b0b0d?style=for-the-badge&logo=postgresql&logoColor=e9e3d1&labelColor=0b0b0d" alt="PostgreSQL"> <img src="https://img.shields.io/badge/Git-0b0b0d?style=for-the-badge&logo=git&logoColor=e9e3d1&labelColor=0b0b0d" alt="Git"> <img src="https://img.shields.io/badge/Vercel-0b0b0d?style=for-the-badge&logo=vercel&logoColor=e9e3d1&labelColor=0b0b0d" alt="Vercel">
 </p>
 
-<img src="./assets/activity.svg" alt="Contribution activity" width="100%">
-
-<p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Neverfinished005&layout=compact&bg_color=0d0814&title_color=e9739f&text_color=f4eee6&border_color=3b2a4a" alt="Top languages">
-</p>
-
-
-<img src="./assets/divider-dark.svg" alt="" width="100%">
-
-<h2 align="center">About</h2>
-
-- 🏢 Building at **[Alpha.Kore](https://www.alphakore.org/)**: a small studio turning sparks into impact
-- 📍 Vadodara, Gujarat, India
-- 🤖 Working on AI agents, automation and web products
-- 🌱 Learning Python, machine learning and DSA, one day at a time
-
-<img src="./assets/divider-dark.svg" alt="" width="100%">
-
-<h2 align="center">Languages · Frameworks · Tools</h2>
-<br/>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nodejs,python,java,cpp&perline=9" alt="Languages and frameworks">
-  <br/>
-  <img src="https://skillicons.dev/icons?i=flask,vite,tailwind,postgres,mongodb,git,github,vercel,netlify,figma&perline=10" alt="Tools">
-</p>
-
-<img src="./assets/divider-dark.svg" alt="" width="100%">
-
-<h2 align="center">Featured work</h2>
+<img src="./assets/g-relics.svg" alt="Relics" width="100%">
 
 <table align="center">
   <tr>
-    <td align="center"><a href="https://github.com/Neverfinished005/AGENTOS-"><b>AGENTOS</b></a><br/>Runtime safety guard for LangChain and Python agents</td>
-    <td align="center"><a href="https://github.com/Neverfinished005/ORBITGAURD"><b>ORBITGAURD</b></a><br/>3D space situational awareness for collision avoidance</td>
-    <td align="center"><a href="https://github.com/Neverfinished005/demandanalyzer"><b>demandanalyzer</b></a><br/>ML sales and demand forecasting</td>
+    <td align="center" width="33%"><a href="https://github.com/Neverfinished005/AGENTOS-"><b>AGENTOS</b></a><br><sub>Runtime safety guard for LangChain and Python agents</sub></td>
+    <td align="center" width="33%"><a href="https://github.com/Neverfinished005/ORBITGAURD"><b>ORBITGAURD</b></a><br><sub>3D space situational awareness for collision avoidance</sub></td>
+    <td align="center" width="33%"><a href="https://github.com/Neverfinished005/demandanalyzer"><b>demandanalyzer</b></a><br><sub>ML forecasting of seasonal sales and demand</sub></td>
   </tr>
 </table>
 
-<img src="./assets/divider-dark.svg" alt="" width="100%">
+<img src="./assets/g-vitals.svg" alt="Vital Signs" width="100%">
+
+<p align="center">
+  <img height="175" src="https://github-readme-stats.vercel.app/api?username=Neverfinished005&show_icons=true&count_private=true&bg_color=09090b&title_color=e9e3d1&text_color=a8a291&icon_color=e9e3d1&border_color=3a3a42" alt="GitHub stats">
+  <img height="175" src="https://streak-stats.demolab.com?user=Neverfinished005&count_private=true&background=09090b&ring=e9e3d1&fire=e9e3d1&currStreakLabel=e9e3d1&sideLabels=a8a291&currStreakNum=ffffff&sideNums=ffffff&dates=7d7868&border=3a3a42" alt="Streak">
+</p>
+
+<p align="center">
+  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Neverfinished005&layout=compact&bg_color=09090b&title_color=e9e3d1&text_color=a8a291&icon_color=e9e3d1&border_color=3a3a42" alt="Top languages">
+</p>
+
+<img src="./assets/g-activity.svg" alt="Graveyard Shift" width="100%">
+
+<img src="./assets/g-footer.svg" alt="stay nocturnal" width="100%">
