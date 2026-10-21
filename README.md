@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/g-banner.svg" alt="Rudra Vable, Neverfinished005" width="100%">
+<img src="./assets/g-banner-v2.svg" alt="Rudra Vable, Neverfinished005" width="100%">
 
 <br>
 

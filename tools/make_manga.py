@@ -98,7 +98,7 @@ banner = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 <g class="rise"><text x="66" y="506" font-family="GG,'Times New Roman',serif" font-weight="700" font-size="116" fill="url(#txt)">Rudra Vable</text>
 <g transform="skewX(-16)"><rect class="glint" x="20" y="416" width="70" height="120" fill="url(#streak)" opacity="0"/></g></g>
 </g></svg>'''
-open(os.path.join(A, 'g-banner.svg'), 'w', encoding='utf-8').write(banner)
+open(os.path.join(A, 'g-banner-v2.svg'), 'w', encoding='utf-8').write(banner)
 
 # ================================================================ SECTION HEADERS (ink band with moving hatch)
 def header(slug, label, sub):
