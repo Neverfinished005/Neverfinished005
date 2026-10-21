@@ -77,7 +77,7 @@ banner = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 <linearGradient id="lft" x1="0" x2="1"><stop offset="0" stop-color="{INK}" stop-opacity=".8"/><stop offset=".55" stop-color="{INK}" stop-opacity="0"/></linearGradient>
 <radialGradient id="vig" cx="55%" cy="45%" r="78%"><stop offset=".55" stop-color="{INK}" stop-opacity="0"/><stop offset="1" stop-color="{INK}" stop-opacity=".85"/></radialGradient>
 <linearGradient id="streak" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-<linearGradient id="txt" x1="0" x2="1"><stop offset="0" stop-color="#fff"/><stop offset=".6" stop-color="{BONE}"/><stop offset="1" stop-color="#a8a291"/></linearGradient>
+<linearGradient id="txt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff3b30"/><stop offset=".55" stop-color="#d4141e"/><stop offset="1" stop-color="#8f0b14"/></linearGradient>
 <pattern id="ht" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><circle cx="3" cy="3" r="1" fill="#000" fill-opacity=".5"/></pattern>
 <clipPath id="card"><rect width="{W}" height="{H}" rx="4"/></clipPath>
 <clipPath id="k1"><rect class="t1" x="68" y="494" height="30"/></clipPath><clipPath id="k2"><rect class="t2" x="68" y="532" height="28"/></clipPath>
@@ -95,13 +95,8 @@ banner = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 <g>{dust}</g>
 <rect class="flash" width="{W}" height="{H}" fill="#fff"/>
 {frame(W, H)}
-<g class="rise"><text x="66" y="440" font-family="UC,'Times New Roman',serif" font-size="112" fill="url(#txt)">Rudra Vable</text>
-<g transform="skewX(-16)"><rect class="glint" x="20" y="350" width="70" height="120" fill="url(#streak)" opacity="0"/></g></g>
-<g class="sub"><path d="M70,456 H300" stroke="{BONE}" stroke-opacity=".7"/><g transform="translate(312 456)">{quatre(8)}</g><path d="M326,456 H430" stroke="{BONE}" stroke-opacity=".4"/>
-<text x="70" y="486" font-family="PO,Georgia,serif" font-size="26" fill="{DIM}" letter-spacing="4">@Neverfinished005</text></g>
-<g clip-path="url(#k1)"><text x="68" y="516" font-family="'Courier New',monospace" font-size="18" fill="{BONE}">&gt; python · ml · sql · dsa · mobile</text></g>
-<g clip-path="url(#k2)"><text x="68" y="552" font-family="'Courier New',monospace" font-size="15" fill="{DIM}">// spawns at night. admires stars.</text></g>
-<rect class="caret" x="68" y="566" width="10" height="3" fill="{BONE}"/>
+<g class="rise"><text x="66" y="506" font-family="UC,'Times New Roman',serif" font-size="112" fill="url(#txt)">Rudra Vable</text>
+<g transform="skewX(-16)"><rect class="glint" x="20" y="416" width="70" height="120" fill="url(#streak)" opacity="0"/></g></g>
 </g></svg>'''
 open(os.path.join(A, 'g-banner.svg'), 'w', encoding='utf-8').write(banner)
 
