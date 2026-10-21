@@ -8,9 +8,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 A, T = os.path.join(ROOT, 'assets'), os.path.join(ROOT, 'tools')
 random.seed(21)
 b64f = lambda n: base64.b64encode(open(os.path.join(T, n), 'rb').read()).decode()
-UC, PO = b64f('uc.woff'), b64f('po.woff')
+UC, PO, GG = b64f('uc.woff'), b64f('po.woff'), b64f('gg.woff')
 INK, BONE, DIM, FAINT = '#09090b', '#e9e3d1', '#a8a291', '#5e5a50'
-FONTS = f"@font-face{{font-family:'UC';src:url(data:font/woff;base64,{UC}) format('woff')}}@font-face{{font-family:'PO';src:url(data:font/woff;base64,{PO}) format('woff')}}"
+FONTS = f"@font-face{{font-family:'UC';src:url(data:font/woff;base64,{UC}) format('woff')}}@font-face{{font-family:'PO';src:url(data:font/woff;base64,{PO}) format('woff')}}@font-face{{font-family:'GG';src:url(data:font/woff;base64,{GG}) format('woff');font-weight:700}}"
 
 # ---------------------------------------------------------------- shared bits
 def scallop(x0, x1, y, step=34, depth=14, flip=1, op=.5):
@@ -77,7 +77,7 @@ banner = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 <linearGradient id="lft" x1="0" x2="1"><stop offset="0" stop-color="{INK}" stop-opacity=".8"/><stop offset=".55" stop-color="{INK}" stop-opacity="0"/></linearGradient>
 <radialGradient id="vig" cx="55%" cy="45%" r="78%"><stop offset=".55" stop-color="{INK}" stop-opacity="0"/><stop offset="1" stop-color="{INK}" stop-opacity=".85"/></radialGradient>
 <linearGradient id="streak" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-<linearGradient id="txt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff3b30"/><stop offset=".55" stop-color="#d4141e"/><stop offset="1" stop-color="#8f0b14"/></linearGradient>
+<linearGradient id="txt" x1="0" x2="1"><stop offset="0" stop-color="#fff"/><stop offset=".6" stop-color="{BONE}"/><stop offset="1" stop-color="#a8a291"/></linearGradient>
 <pattern id="ht" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><circle cx="3" cy="3" r="1" fill="#000" fill-opacity=".5"/></pattern>
 <clipPath id="card"><rect width="{W}" height="{H}" rx="4"/></clipPath>
 <clipPath id="k1"><rect class="t1" x="68" y="494" height="30"/></clipPath><clipPath id="k2"><rect class="t2" x="68" y="532" height="28"/></clipPath>
@@ -95,7 +95,7 @@ banner = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 <g>{dust}</g>
 <rect class="flash" width="{W}" height="{H}" fill="#fff"/>
 {frame(W, H)}
-<g class="rise"><text x="66" y="506" font-family="UC,'Times New Roman',serif" font-size="112" fill="url(#txt)">Rudra Vable</text>
+<g class="rise"><text x="66" y="506" font-family="GG,'Times New Roman',serif" font-weight="700" font-size="116" fill="url(#txt)">Rudra Vable</text>
 <g transform="skewX(-16)"><rect class="glint" x="20" y="416" width="70" height="120" fill="url(#streak)" opacity="0"/></g></g>
 </g></svg>'''
 open(os.path.join(A, 'g-banner.svg'), 'w', encoding='utf-8').write(banner)
