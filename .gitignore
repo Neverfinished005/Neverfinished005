@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 tools/cal.json
+tools/stats.json
+tools/src-hero.jpg

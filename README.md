@@ -4,6 +4,7 @@
 
 <br>
 
+<sub><sup>cover art &mdash; Kentaro Miura, <i>Berserk</i></sup></sub><br>
 <sub><code>i spawn at night &middot; code &middot; explore &middot; watch stars &middot; admire nature</code></sub>
 
 </div>
@@ -40,14 +41,7 @@ I'm building a solid foundation in **Python, machine learning, SQL, data structu
 
 <img src="./assets/g-vitals.svg" alt="Vital Signs" width="100%">
 
-<p align="center">
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=Neverfinished005&show_icons=true&count_private=true&bg_color=09090b&title_color=e9e3d1&text_color=a8a291&icon_color=e9e3d1&border_color=3a3a42" alt="GitHub stats">
-  <img height="175" src="https://streak-stats.demolab.com?user=Neverfinished005&count_private=true&background=09090b&ring=e9e3d1&fire=e9e3d1&currStreakLabel=e9e3d1&sideLabels=a8a291&currStreakNum=ffffff&sideNums=ffffff&dates=7d7868&border=3a3a42" alt="Streak">
-</p>
-
-<p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Neverfinished005&layout=compact&bg_color=09090b&title_color=e9e3d1&text_color=a8a291&icon_color=e9e3d1&border_color=3a3a42" alt="Top languages">
-</p>
+<img src="./assets/g-stats.svg" alt="GitHub stats" width="100%">
 
 <img src="./assets/g-activity.svg" alt="Graveyard Shift" width="100%">
 
