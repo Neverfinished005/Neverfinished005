@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/hero.svg" alt="Rudra Vable, builder at Alpha.Kore" width="100%">
+<img src="./assets/hero-image.svg" alt="Rudra Vable, builder at Alpha.Kore" width="100%">
 
 <p>
   <a href="https://www.alphakore.org/"><img height="28" src="https://img.shields.io/badge/ALPHA.KORE-0d0814?style=for-the-badge&labelColor=0d0814&color=0d0814&logoColor=e3b04b&label=%E2%9C%A6&labelColor=c08f14" alt="Alpha.Kore"></a>&nbsp;
