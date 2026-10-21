@@ -23,14 +23,10 @@
   <img height="175" src="https://streak-stats.demolab.com?user=Neverfinished005&count_private=true&background=0d0814&ring=e9739f&fire=e3b04b&currStreakLabel=e3b04b&sideLabels=f4eee6&currStreakNum=f4eee6&sideNums=f4eee6&dates=9d93ad&border=3b2a4a" alt="Streak">
 </p>
 
-<p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Neverfinished005&layout=compact&bg_color=0d0814&title_color=e9739f&text_color=f4eee6&icon_color=e3b04b&border_color=3b2a4a" alt="Top languages">
-</p>
-
 <img src="./assets/activity.svg" alt="Contribution activity" width="100%">
 
 <p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Neverfinished005&layout=compact&theme=midnight-purple&hide_border=true" alt="Top languages">
+  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Neverfinished005&layout=compact&bg_color=0d0814&title_color=e9739f&text_color=f4eee6&border_color=3b2a4a" alt="Top languages">
 </p>
 
 
