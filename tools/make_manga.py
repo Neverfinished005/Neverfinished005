@@ -25,12 +25,12 @@ def corner():
 <path d="M88,0 q13,0 13,13 q0,-8 -8,-8"/><path d="M0,88 q0,13 13,13 q-8,0 -8,-8"/><circle cx="13" cy="13" r="5"/><circle cx="13" cy="13" r="1.6" fill="{BONE}"/></g>
 <g transform="translate(44 0)">{quatre(8)}</g><g transform="translate(0 44)">{quatre(8)}</g>'''
 
-def frame(W, H, m=20):
-    return f'''<rect x="{m}" y="{m}" width="{W-2*m}" height="{H-2*m}" fill="none" stroke="{BONE}" stroke-opacity=".75" stroke-width="1.6"/>
-<rect x="{m+8}" y="{m+8}" width="{W-2*m-16}" height="{H-2*m-16}" fill="none" stroke="{BONE}" stroke-opacity=".28" stroke-dasharray="1 5"/>
-<g transform="translate({m},{m})">{corner()}</g><g transform="translate({W-m},{m}) scale(-1,1)">{corner()}</g>
-<g transform="translate({m},{H-m}) scale(1,-1)">{corner()}</g><g transform="translate({W-m},{H-m}) scale(-1,-1)">{corner()}</g>
-{scallop(m+96, W-m-96, m, flip=1)}{scallop(m+96, W-m-96, H-m, flip=-1)}'''
+def frame(W, H, m=7):
+    return f'''<rect x="{m}" y="{m}" width="{W-2*m}" height="{H-2*m}" fill="none" stroke="{BONE}" stroke-opacity=".95" stroke-width="3.4"/>
+<rect x="{m+12}" y="{m+12}" width="{W-2*m-24}" height="{H-2*m-24}" fill="none" stroke="{BONE}" stroke-opacity=".55" stroke-width="1.6" stroke-dasharray="2 6"/>
+<g transform="translate({m},{m}) scale(1.6)">{corner()}</g><g transform="translate({W-m},{m}) scale(-1.6,1.6)">{corner()}</g>
+<g transform="translate({m},{H-m}) scale(1.6,-1.6)">{corner()}</g><g transform="translate({W-m},{H-m}) scale(-1.6,-1.6)">{corner()}</g>
+{scallop(m+150, W-m-150, m, step=44, depth=20, flip=1, op=.8)}{scallop(m+150, W-m-150, H-m, step=44, depth=20, flip=-1, op=.8)}'''
 
 BAT = f'<path d="M0,0 C-6,-11 -19,-13 -29,-4 C-22,-6 -15,-3 -11,3 C-7,-1 -3,1 0,5 C3,1 7,-1 11,3 C15,-3 22,-6 29,-4 C19,-13 6,-11 0,0Z" fill="#000" stroke="{BONE}" stroke-opacity=".5" stroke-width=".8"/>'
 
@@ -98,7 +98,7 @@ banner = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 <g class="rise"><text x="64" y="812" font-family="UC,'Times New Roman',serif" font-size="230" fill="url(#txt)">Rudi</text>
 <g transform="skewX(-16)"><rect class="glint" x="20" y="640" width="90" height="190" fill="url(#streak)" opacity="0"/></g></g>
 </g></svg>'''
-open(os.path.join(A, 'g-banner-v3.svg'), 'w', encoding='utf-8').write(banner)
+open(os.path.join(A, 'g-banner-v5.svg'), 'w', encoding='utf-8').write(banner)
 
 # ================================================================ SECTION HEADERS (ink band with moving hatch)
 def header(slug, label, sub):

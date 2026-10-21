@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/g-banner-v3.svg" alt="Rudi" width="100%">
+<img src="./assets/g-banner-v5.svg" alt="Rudi" width="100%">
 
 <br>
 
